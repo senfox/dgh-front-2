@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFBFC;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #444240;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Шляпа*/
+.main-header {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #01194E;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-general{
+    display:flex;
+}
+
+.main-navigate {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.main-navigat_static {
+    display: flex;
+}
+
+.nav-general_title {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+
+.nav-general_title-descripton {
+    margin: 0;
+    padding: 8px 0 10px 20px;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.site-nav {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.site-nav_item {
+    margin: 0 0 0 70px;
+    padding: 0;
+    position: relative;
+    
+}
+
+.site-nav_item-link {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 46px;
+}
+
+.site-nav_item-link img {
+    position: absolute;
+    margin: 0;
+    padding-right: 14px;
+    left: 0;
+}
+
+
+/*Правая часть меню (пользователь)*/
+.user-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-navigation_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.user-navigation_point {
+    margin: 0 0 0 10px;
+}
+
+
+/*Заголовок и фильтры*/
+.hat-spacer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subhat-spacer {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 30px 0;
+    padding: 0;
+}
+
+
+/*Блок с карточками*/
+.summary-cards {
+    margin-bottom: 40px;
+}
+.card-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;  
+    display: flex;
+}
+
+.card-list_item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #B3BACA;
+    padding: 30px;
+    display: flex;
+}
+
+.card-list_item-value {
+    font-size: 55px;
+    font-weight: 600;
+    margin: 24px 0;
+    padding: 0;
+}
+
+.card-list_item-description {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-list_grad {
+    width: 120px; 
+    height: 120px;
+    margin: 0 0 0 80px;
+    padding: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(135deg, #5630C3, #CE25F4);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Тепловая карта*/
+.map {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #B3BACA;
+    padding: 30px;
+    width: 70%;
+}
+
+.heat-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heat-map_head {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.heat-map_status {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.heat-map_status li {
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.heat-map_status-bad {
+    background: url('img/more-sq.svg') no-repeat 0 7px;
+    margin-right: 20px;
+}
+
+.heat-map_status-good {
+    background: url('img/less-sq.svg') no-repeat 0 7px;
+}
+
+#heat-custom-map {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+/*правый блок с новостишкой*/
+.outage-news {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #B3BACA;
+    padding: 30px;
+    width: 19%;
+    background-image: url(img/banner.jpg);
+}
+
+.outage-news:after {
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+    background-image: linear-gradient(to right, rgba(86, 48, 195, 1), rgba(86, 48, 195, 0.5));
+	opacity: 0.8;
+    border-radius: 15px;
+}
+
+.outage-news-content {
+    color: #fff;
+    position: relative;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.moar {
+    text-decoration: none;
+    color: #FFE000;
+    font-size: 18px;
+}
+
+.moar img {
+    margin-left: 10px;
+}
+
+/*Футер*/
+.main-footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

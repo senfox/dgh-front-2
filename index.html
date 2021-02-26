@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карта отключений электроэнергии</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            
+                <nav class="main-navigate">
+                    <div class="main-navigat_static">
+                    <a class="nav-general_title" href="https://krd.ru/">
+                        <img src="img/logo.png" width="83" height="69" alt="Администрация муниципального образования город Краснодар">
+                    </a>
+                        <h1 class="nav-general_title-descripton">Карта<br>отключений</h1>
+                    </div>
+
+                    <ul class="site-nav">
+                        <li class="site-nav_item">
+                            <a class="site-nav_item-link" href="#">
+                                <img src="img/dashboard.svg" width="28" height="28" alt="Дашборд">
+                                Система
+                            </a>
+                        </li>
+                        <li class="site-nav_item">
+                            <a class="site-nav_item-link" href="#">
+                                <img src="img/loc.svg" width="28" height="28" alt="Карта отключений">
+                                Карта
+                            </a>
+                        </li>
+                        <li class="site-nav_item">
+                            <a class="site-nav_item-link" href="#">
+                                <img src="img/location.svg" width="28" height="28" alt="Тепловая карта отключений">
+                                Отключения
+                            </a>
+                        </li>
+                        <li class="site-nav_item">
+                            <a class="site-nav_item-link" href="#">
+                                <img src="img/list.svg" width="28" height="28" alt="Список аварий">
+                                Список
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="user-navigation">
+                    <img class="user-navigation_pic" src="https://via.placeholder.com/50" width="50" height="50" alt="Фото профиля">
+                    Антонина Соколова
+                    <img class="user-navigation_point" src="img/sort.svg" width="15" height="9" alt="Профильное меню">
+                </a>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="hat-spacer">
+            <div class="container">
+                <h2 class="subhat-spacer">Сводка</h2>
+            
+            
+            <div>
+                <div class="hat-search"></div>
+                <div class="hat-dropdown"></div>
+            </div>
+            </div>
+        </div>
+        
+    <section class="summary-cards">
+        <ul class="card-list container">
+            <li class="card-list_item">
+               <div>
+               <p class="card-list_item-value">21</p>
+                <h3 class="card-list_item-description">Активных</h3>
+                </div>
+                <div class="card-list_grad">
+                    <img src="img/alert-el.svg" width="42" height="60" alt="Активные отключения">
+                </div>
+            </li>
+            <li class="card-list_item">
+               <div>
+               <p class="card-list_item-value">650</p>
+                <h3 class="card-list_item-description">Человек</h3>
+                </div>
+                <div class="card-list_grad">
+                    <img src="img/chuvaki.svg" width="60" height="60" alt="Человек пострадало">
+                </div>
+            </li>
+            <li class="card-list_item">
+               <div>
+               <p class="card-list_item-value">45</p>
+                <h3 class="card-list_item-description">Подстанций</h3>
+                </div>
+                <div class="card-list_grad">
+                    <img src="img/station.svg" width="60" height="60" alt="Подстанций пострадало">
+                </div>
+            </li>
+            <li class="card-list_item">
+               <div>
+               <p class="card-list_item-value">8</p>
+                <h3 class="card-list_item-description">Социальных<br>объектов</h3>
+                </div>
+                <div class="card-list_grad">
+                    <img src="img/soc-build.svg" width="62" height="60" alt="Социальные объектыиз них">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+   <section class="second-line">
+      <div class="container">
+      
+       <div class="map">
+          <div class="heat-map">
+           <h2 class="heat-map_head">Тепловая карта</h2>
+           <ul class="heat-map_status">
+               <li class="heat-map_status-bad">Более потерпевшие</li>
+               <li class="heat-map_status-good">Менее потерпевшие</li>
+           </ul>
+           </div>
+           
+           <div id="heat-custom-map">
+           </div>
+           
+          </div>
+          
+       <div class="outage-news">
+           <div class="outage-news-content">
+               <p>Массовое отключение подстанций с 4 по 17 марта 2021 года</p>
+               <a class="moar" href="#">Подробнее <img width="18" height="15" src="img/arrow.svg"></a>
+           </div>
+       </div>
+       
+       </div>
+   </section>
+    </main>
+
+    <footer class="main-footer">
+<p>Designed with <img src="img/rze.svg"> отделом развития цифровой экономики МО г. Краснодар</p>
+    </footer>
+
+</body>
+
+</html>
