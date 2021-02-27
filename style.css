@@ -42,6 +42,7 @@ body {
 
 .main-navigat_static {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-general_title {
@@ -80,31 +81,72 @@ body {
     padding-left: 46px;
 }
 
-.site-nav_item-link img {
+.site-nav_item-link svg {
     position: absolute;
     margin: 0;
-    padding-right: 14px;
     left: 0;
+    fill: #B3BACA;
+}
+
+.item-active {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item-active svg {
+    fill: #fff;
 }
 
 
 /*Правая часть меню (пользователь)*/
 .user-navigation {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-}
-
-.user-navigation_pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0 10px 0 0;
+    line-height: 20px;
+    justify-content: center;
 }
 
 .user-navigation_point {
     margin: 0 0 0 10px;
 }
+
+
+.user-menu {
+    margin-top: 22px;
+}
+
+.user-dropdown, .user-menu {
+  cursor: pointer; 
+}
+
+.user-menu.show .user-dropdown {
+  box-shadow: 2px 2px 5px #B3BACA;
+  display: block;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 118px;
+  display: none;
+  width: 240px;
+  background-color: #fff;
+    right: 110px;
+}
+
+.dropdown-item {
+  color: #000;
+    font-size: 16px;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-item:active, .dropdown-item:hover {
+  background-color: #01194E;
+  color: #fff;
+    font-weight: 600;
+}
+
 
 
 /*Заголовок и фильтры*/
@@ -114,7 +156,7 @@ body {
 }
 
 .subhat-spacer {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     margin: 50px 0 30px 0;
     padding: 0;
@@ -123,7 +165,7 @@ body {
 
 /*Блок с карточками*/
 .summary-cards {
-    margin-bottom: 40px;
+    margin: 40px auto;
 }
 .card-list {
     list-style: none;
@@ -140,10 +182,16 @@ body {
     display: flex;
 }
 
+.item-info {
+    margin-bottom: -20px;
+    padding-bottom: -20px;
+}
+
 .card-list_item-value {
-    font-size: 55px;
-    font-weight: 600;
-    margin: 24px 0;
+    font-size: 50px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
     padding: 0;
 }
 
@@ -155,9 +203,9 @@ body {
 }
 
 .card-list_grad {
-    width: 120px; 
-    height: 120px;
-    margin: 0 0 0 80px;
+    width: 110px; 
+    height: 110px;
+    margin: 0 0 0 90px;
     padding: 0;
     border-radius: 15px;
     background-image: linear-gradient(135deg, #5630C3, #CE25F4);
@@ -215,7 +263,7 @@ body {
 #heat-custom-map {
     width: 100%;
     height: 400px;
-    background-color: #ccc;
+    background-image: url(img/hotmap-bg.png);
     border-radius: 15px;
 }
 
@@ -265,9 +313,11 @@ body {
 
 /*Футер*/
 .main-footer {
+    color: #86939E;
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     text-align: center;
+    font-size: 16px;
 }
 
 
